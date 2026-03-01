@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Sleek, modern palette */
+  --color-teal: #0F3D3D;
+  --color-teal-light: #1A5C5C;
+  --color-teal-neon: #00F0FF;
+  --color-warm-gray: #F8FAFC;
+  /* Slate-50 */
+  --color-gold: #D4AF37;
+  --color-dark: #0B1120;
+  /* Deep Slate/Navy */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-warm-gray);
+  color: #1E293B;
+  /* Slate-800 */
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
+  font-family: 'Outfit', system-ui, sans-serif !important;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-warm-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-teal-light);
+}
+
+/* ===== GLASS MORPHISM ===== */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-teal {
+    background: rgba(15, 61, 61, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-white {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
+  }
+
+  .text-gradient-teal {
+    background: linear-gradient(135deg, var(--color-teal-light), var(--color-teal-neon));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(to bottom,
+        rgba(11, 17, 32, 0.3) 0%,
+        rgba(11, 17, 32, 0.6) 50%,
+        rgba(15, 61, 61, 0.8) 100%);
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* ===== PROPERTY CARD ===== */
+.property-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(31, 95, 95, 0.18);
+}
+
+.property-card:hover .card-image {
+  transform: scale(1.06);
+}
+
+.card-image {
+  transition: transform 0.5s ease;
+}
+
+/* ===== LEAFLET MAP OVERRIDES ===== */
+.leaflet-container {
+  font-family: 'Lato', sans-serif !important;
+  border-radius: 12px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 14px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18) !important;
+  border: none !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 240px !important;
+}
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+
+.leaflet-popup-close-button {
+  z-index: 10;
+  color: white !important;
+  font-size: 18px !important;
+  top: 6px !important;
+  right: 8px !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  border: none !important;
+  color: #1F5F5F !important;
+  font-weight: 700 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #E8F0F0 !important;
+}
+
+.leaflet-attribution-flag {
+  display: none !important;
+}
+
+/* ===== LIGHTBOX OVERRIDE ===== */
+.yarl__container {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+/* ===== FLOAT ANIMATION ===== */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #EBEBEB 25%, #F5F5F5 50%, #EBEBEB 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ===== CUSTOM RANGE SLIDER ===== */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #D6D6D6;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #1F5F5F;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(31, 95, 95, 0.35);
+  transition: transform 0.2s;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* ===== REACT BIG CALENDAR ===== */
+.rbc-calendar {
+  font-family: 'Lato', sans-serif !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rbc-header {
+  background: #1F5F5F;
+  color: white;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rbc-today {
+  background-color: #E8F0F0 !important;
+}
+
+.rbc-event {
+  background: #1F5F5F !important;
+  border-radius: 6px !important;
+  border: none !important;
+}
+
+.rbc-selected {
+  background: #2E7070 !important;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background: #1F5F5F !important;
+  color: white !important;
+  border-color: #1F5F5F !important;
+}

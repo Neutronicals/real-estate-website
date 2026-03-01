@@ -1,0 +1,422 @@
+﻿
+> real-estate-website@0.1.0 dev
+> next dev
+
+  Γû▓ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ Γ£ô Starting...
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you. Strict-mode is set to false by default.
+   The following mandatory changes were made to your tsconfig.json:
+
+   	- jsx was set to preserve (next.js implements its own optimized jsx transform)
+
+ Γ£ô Ready in 6s
+ Γùï Compiling / ...
+ Γ£ô Compiled / in 8.6s (1346 modules)
+ Γ£ô Compiled in 1012ms (671 modules)
+ GET / 200 in 9702ms
+ GET / 200 in 119ms
+ GET / 200 in 463ms
+ Γùï Compiling /agents ...
+ Γ£ô Compiled /search in 7.9s (1477 modules)
+node.exe :  Γ¿» Error: Event 
+handlers cannot be passed to 
+Client Component props.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: ( Γ¿» Er  
+  ror: Eve...omponent prop   
+ s.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "1575373949"
+ GET /search 200 in 485ms
+ Γùï Compiling /api/properties ...
+ Γ£ô Compiled /api/properties in 1823ms (778 modules)
+ GET /api/properties? 200 in 1931ms
+ GET /api/properties? 200 in 8ms
+ GET /search 200 in 3006ms
+ GET /api/properties? 200 in 175ms
+ GET /api/properties? 200 in 24ms
+ GET /search 200 in 997ms
+ GET /api/properties? 200 in 57ms
+ GET /api/properties? 200 in 29ms
+ GET /search 200 in 1689ms
+ GET /api/properties? 200 in 286ms
+ GET /api/properties? 200 in 71ms
+ GET /search 200 in 487ms
+ GET /api/properties? 200 in 206ms
+ GET /api/properties? 200 in 58ms
+ GET /search 200 in 618ms
+ GET /api/properties? 200 in 320ms
+ GET /api/properties? 200 in 1281ms
+ GET /search 200 in 684ms
+ GET /api/properties? 200 in 455ms
+ GET /api/properties? 200 in 960ms
+ Γ¿» Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "3498211967"
+ Γ¿» Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "3498211967"
+ GET /agents 500 in 837ms
+ Γ¿» Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "3498211967"
+ Γ¿» Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "3498211967"
+ GET /agents 500 in 238ms
+ Γ¿» Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "3498211967"
+ Γ¿» Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  <a href=... 
+onClick={function onClick} 
+className=... children=...>
+                      
+^^^^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>)
+    at stringify 
+(<anonymous>)
+digest: "3498211967"
+ GET /agents 500 in 356ms
+ ΓÜá Fast Refresh had to 
+perform a full reload due to 
+a runtime error.
+ ΓÜá Fast Refresh had to 
+perform a full reload due to 
+a runtime error.
+ Γ£ô Compiled in 7.3s (1473 modules)
+ GET /search 200 in 2830ms
+ Γùï Compiling /api/properties ...
+ Γ£ô Compiled /api/properties in 728ms (778 modules)
+ GET /api/properties? 200 in 1179ms
+ GET /api/properties? 200 in 42ms
+ GET /search 200 in 244ms
+ GET /search 200 in 505ms
+ GET /api/properties? 200 in 333ms
+ GET /api/properties? 200 in 1487ms
+ GET /agents 200 in 378ms
+ GET /search 200 in 210ms
+ GET /api/properties? 200 in 51ms
+ GET /api/properties? 200 in 28ms
+ GET /agents 200 in 145ms
+ ΓÜá Fast Refresh had to 
+perform a full reload due to 
+a runtime error.
+ Γùï Compiling /_not-found ...
+ Γ£ô Compiled /_not-found in 5.3s (1473 modules)
+ ΓÜá Fast Refresh had to 
+perform a full reload due to 
+a runtime error.
+ Γ£ô Compiled in 1927ms (1462 modules)
+ GET /_next/static/webpack/e83c82ac5bffe900.webpack.hot-update.json 404 in 5868ms
+ GET /search 200 in 5401ms
+ ΓÜá Fast Refresh had to 
+perform a full reload. Read 
+more: https://nextjs.org/docs
+/messages/fast-refresh-reload
+ GET /agents 200 in 1492ms
+ Γ£ô Compiled /api/properties in 434ms (780 modules)
+ GET /api/properties? 200 in 748ms
+ GET /api/properties? 200 in 36ms
+ Γùï Compiling /agents/[id] ...
+ Γ£ô Compiled /agents/[id] in 23.5s (3441 modules)
+ ΓÜá Fast Refresh had to 
+perform a full reload due to 
+a runtime error.
+ GET /search 200 in 723ms
+ Γùï Compiling /api/properties ...
+ Γ£ô Compiled /api/properties in 1026ms (1758 modules)
+ GET /api/properties? 200 in 1290ms
+ GET /api/properties? 200 in 27ms
+ Γùï Compiling /_not-found ...
+ Γ£ô Compiled /_not-found in 1746ms (1760 modules)
+ GET /agents/a2 200 in 1038ms
+ GET /agents 200 in 222ms
+TypeError: fetch failed
+    at node:internal/deps/und
+ici/undici:16416:13
+    at process.processTicksAn
+dRejections (node:internal/pr
+ocess/task_queues:103:5)
+    at async 
+fetchExternalImage 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\image-optimiz
+er.js:580:17)
+    at async 
+DevServer.imageOptimizer 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\next-server.j
+s:650:48)
+    at async cacheEntry.image
+ResponseCache.get.incremental
+Cache 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\next-server.j
+s:182:65)
+    at async 
+D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\response-cach
+e\index.js:90:36
+    at async 
+D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\lib\batcher.js:45:32
+ {
+  [cause]: 
+ConnectTimeoutError: Connect 
+Timeout Error (attempted 
+addresses: 
+151.101.2.208:443, 
+151.101.194.208:443, 
+151.101.130.208:443, 
+151.101.66.208:443, timeout: 
+10000ms)
+      at onConnectTimeout (no
+de:internal/deps/undici/undic
+i:1946:23)
+      at 
+Immediate._onImmediate (node:
+internal/deps/undici/undici:1
+912:35)
+      at 
+process.processImmediate (nod
+e:internal/timers:504:21) {
+    code: 
+'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ Γùï Compiling /_error ...
+ Γ£ô Compiled /_error in 4s (3640 modules)
+ ΓÜá Fast Refresh had to 
+perform a full reload due to 
+a runtime error.
+ GET /agents/a1 200 in 2503ms
+ GET /search 200 in 1537ms
+ Γùï Compiling /api/properties ...
+ Γ£ô Compiled /api/properties in 943ms (1801 modules)
+ GET /api/properties? 200 in 1152ms
+ GET /api/properties? 200 in 51ms
+TypeError: fetch failed
+    at node:internal/deps/und
+ici/undici:16416:13
+    at 
+processTicksAndRejections (no
+de:internal/process/task_queu
+es:103:5)
+    at runNextTicks (node:int
+ernal/process/task_queues:68:
+3)
+    at 
+process.processImmediate 
+(node:internal/timers:472:9)
+    at async 
+fetchExternalImage 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\image-optimiz
+er.js:580:17)
+    at async 
+DevServer.imageOptimizer 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\next-server.j
+s:650:48)
+    at async cacheEntry.image
+ResponseCache.get.incremental
+Cache 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\next-server.j
+s:182:65)
+    at async 
+D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\response-cach
+e\index.js:90:36
+    at async 
+D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\lib\batcher.js:45:32
+ {
+  [cause]: 
+ConnectTimeoutError: Connect 
+Timeout Error (attempted 
+address: 
+images.unsplash.com:443, 
+timeout: 10000ms)
+      at onConnectTimeout (no
+de:internal/deps/undici/undic
+i:1946:23)
+      at 
+Immediate._onImmediate (node:
+internal/deps/undici/undici:1
+912:35)
+      at 
+process.processImmediate (nod
+e:internal/timers:504:21) {
+    code: 
+'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+TypeError: fetch failed
+    at node:internal/deps/und
+ici/undici:16416:13
+    at process.processTicksAn
+dRejections (node:internal/pr
+ocess/task_queues:103:5)
+    at async 
+fetchExternalImage 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\image-optimiz
+er.js:580:17)
+    at async 
+DevServer.imageOptimizer 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\next-server.j
+s:650:48)
+    at async cacheEntry.image
+ResponseCache.get.incremental
+Cache 
+(D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\next-server.j
+s:182:65)
+    at async 
+D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\server\response-cach
+e\index.js:90:36
+    at async 
+D:\ClientProjects\Real 
+Estate Website\node_modules\n
+ext\dist\lib\batcher.js:45:32
+ {
+  [cause]: 
+ConnectTimeoutError: Connect 
+Timeout Error (attempted 
+address: 
+images.unsplash.com:443, 
+timeout: 10000ms)
+      at onConnectTimeout (no
+de:internal/deps/undici/undic
+i:1946:23)
+      at 
+Immediate._onImmediate (node:
+internal/deps/undici/undici:1
+912:35)
+      at 
+process.processImmediate (nod
+e:internal/timers:504:21) {
+    code: 
+'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1573497019940-1c28c88b4f3e%3Fw%3D800%26q%3D80&w=1920&q=75 500 in 10941ms
+ GET /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1573497019940-1c28c88b4f3e%3Fw%3D800%26q%3D80&w=1920&q=75 500 in 51ms
+ GET /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1512917774080-9991f1c4c750%3Fw%3D1200%26q%3D85&w=640&q=75 500 in 10653ms
+ GET /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1512917774080-9991f1c4c750%3Fw%3D1200%26q%3D85&w=640&q=75 500 in 48ms
