@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ConditionalHeader, ConditionalFooter } from "@/components/ConditionalLayout";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
     title: "PropDisc — The Property Discovery Engine",
@@ -32,6 +33,17 @@ export default function RootLayout({
                 />
             </head>
             <body className="font-sans antialiased bg-warmGray-50 text-slate-800 selection:bg-teal-500 selection:text-white">
+                <NextTopLoader
+                    color="#14B8A6"
+                    initialPosition={0.08}
+                    crawlSpeed={200}
+                    height={3}
+                    crawl={true}
+                    showSpinner={false}
+                    easing="ease"
+                    speed={200}
+                    shadow="0 0 10px #14B8A6,0 0 5px #14B8A6"
+                />
                 <ConditionalHeader>
                     <Navbar />
                 </ConditionalHeader>

@@ -34,33 +34,14 @@ export default function HeroSection() {
     const [query, setQuery] = useState("");
     const [placeholder, setPlaceholder] = useState("");
     const [typingIndex, setTypingIndex] = useState(0);
-    const [charIndex, setCharIndex] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-    // Typewriter animation for search placeholder
+    // Swap text slowly to save CPU (2.5 seconds per swap instead of 30 milliseconds!)
     useEffect(() => {
-        const currentText = searchSuggestions[typingIndex];
-        intervalRef.current = setTimeout(() => {
-            if (!isDeleting) {
-                if (charIndex < currentText.length) {
-                    setPlaceholder(currentText.slice(0, charIndex + 1));
-                    setCharIndex((c) => c + 1);
-                } else {
-                    setTimeout(() => setIsDeleting(true), 2500);
-                }
-            } else {
-                if (charIndex > 0) {
-                    setPlaceholder(currentText.slice(0, charIndex - 1));
-                    setCharIndex((c) => c - 1);
-                } else {
-                    setIsDeleting(false);
-                    setTypingIndex((i) => (i + 1) % searchSuggestions.length);
-                }
-            }
-        }, isDeleting ? 30 : 50);
-        return () => { if (intervalRef.current) clearTimeout(intervalRef.current); };
-    }, [charIndex, isDeleting, typingIndex]);
+        const interval = setInterval(() => {
+            setTypingIndex((prev) => (prev + 1) % searchSuggestions.length);
+        }, 2500);
+        return () => clearInterval(interval);
+    }, []);
 
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault();
@@ -130,17 +111,18 @@ export default function HeroSection() {
                         <div className="relative flex items-center bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-[24px] p-2.5 shadow-2xl transition-all duration-300 group-hover:border-teal-500/30">
                             <Search className="w-6 h-6 text-teal-400 ml-5 flex-shrink-0" />
                             <div className="flex-1 relative h-12 flex items-center px-4">
-                                {/* Typewriter Placeholder */}
+                                {/* Static Rotating Placeholder */}
                                 {!query && (
-                                    <span className="absolute left-4 text-slate-400 animate-pulse pointer-events-none text-base md:text-lg">
-                                        {placeholder}<span className="inline-block w-[2px] h-[1em] bg-teal-400 ml-0.5 align-middle animate-pulse" />
+                                    <span className="absolute left-4 text-slate-400 pointer-events-none text-base md:text-lg transition-all duration-300">
+                                        {searchSuggestions[typingIndex]}
+                                        <span className="inline-block w-[2px] h-[1em] bg-teal-400 ml-0.5 align-middle animate-pulse" />
                                     </span>
                                 )}
                                 <input
                                     type="text"
                                     value={query}
                                     onChange={(e) => setQuery(e.target.value)}
-                                    className="w-full h-full bg-transparent outline-none text-white text-base md:text-lg z-10 relative relative"
+                                    className="w-full h-full bg-transparent outline-none text-white text-base md:text-lg z-10 relative"
                                 />
                             </div>
                             <button
