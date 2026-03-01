@@ -10,7 +10,7 @@ export default function AdminSettings() {
         siteName: "PropDisc",
         contactEmail: "contact@propdisc.com",
         contactPhone: "(512) 555-1234",
-        currency: "USD",
+        currency: "GHS",
         adminName: "Jane Admin",
         adminEmail: "admin@propdisc.com",
     });
@@ -44,8 +44,8 @@ export default function AdminSettings() {
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-colors text-sm whitespace-nowrap ${isActive
-                                        ? "bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-sm border border-zinc-200 dark:border-zinc-800"
-                                        : "text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 hover:text-zinc-900 dark:hover:text-white border border-transparent"
+                                    ? "bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-sm border border-zinc-200 dark:border-zinc-800"
+                                    : "text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 hover:text-zinc-900 dark:hover:text-white border border-transparent"
                                     }`}
                             >
                                 <Icon className="w-5 h-5 shrink-0" />
@@ -109,7 +109,7 @@ export default function AdminSettings() {
                                         onChange={handleChange}
                                         className="w-full h-11 px-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-zinc-900 dark:text-white appearance-none"
                                     >
-                                        <option value="USD">USD ($)</option>
+                                        <option value="GHS">GHS (₵)</option>
                                         <option value="EUR">EUR (€)</option>
                                         <option value="GBP">GBP (£)</option>
                                     </select>

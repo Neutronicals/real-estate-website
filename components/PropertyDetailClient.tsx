@@ -147,7 +147,7 @@ function MortgageCalculator({ price }: { price: number }) {
                         onChange={(e) => setHomePrice(Number(e.target.value))}
                         className="w-full mt-3 accent-teal-500"
                     />
-                    <p className="text-teal-400 font-bold mt-2 text-lg">${homePrice.toLocaleString()}</p>
+                    <p className="text-teal-400 font-bold mt-2 text-lg">₵{homePrice.toLocaleString()}</p>
                 </div>
                 <div>
                     <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
@@ -163,7 +163,7 @@ function MortgageCalculator({ price }: { price: number }) {
                         className="w-full mt-3 accent-teal-500"
                     />
                     <p className="text-teal-400 font-bold mt-2 text-lg">
-                        ${(homePrice * downPct / 100).toLocaleString()}
+                        ₵{(homePrice * downPct / 100).toLocaleString()}
                     </p>
                 </div>
                 <div>
@@ -205,11 +205,11 @@ function MortgageCalculator({ price }: { price: number }) {
             <div className="bg-gradient-to-br from-teal-900/40 to-[#0A101C] border border-teal-500/20 rounded-2xl p-6 text-center mb-8 relative z-10 backdrop-blur-md">
                 <p className="text-slate-400 text-sm font-medium">Estimated Monthly Payment</p>
                 <p className="font-serif font-bold text-5xl mt-2 text-white">
-                    ${Math.round(monthlyPayment).toLocaleString()}
+                    ₵{Math.round(monthlyPayment).toLocaleString()}
                     <span className="text-xl font-normal text-teal-400 ml-1">/mo</span>
                 </p>
                 <p className="text-slate-500 text-sm mt-3 font-medium">
-                    Principal ${principal.toLocaleString(undefined, { maximumFractionDigits: 0 })} <span className="mx-2">•</span> {rate}% <span className="mx-2">•</span> {term} years
+                    Principal ₵{principal.toLocaleString(undefined, { maximumFractionDigits: 0 })} <span className="mx-2">•</span> {rate}% <span className="mx-2">•</span> {term} years
                 </p>
             </div>
 
@@ -231,7 +231,7 @@ function MortgageCalculator({ price }: { price: number }) {
                         <XAxis dataKey="year" tick={{ fontSize: 11, fill: "#64748b" }} axisLine={false} tickLine={false} dy={10} />
                         <YAxis tick={{ fontSize: 11, fill: "#64748b" }} axisLine={false} tickLine={false} />
                         <Tooltip
-                            formatter={(v: number) => `$${v.toLocaleString()}`}
+                            formatter={(v: number) => `₵${v.toLocaleString()}`}
                             contentStyle={{ borderRadius: 12, border: "1px solid #1e293b", backgroundColor: "#0f172a", color: "#f8fafc", boxShadow: "0 10px 25px rgba(0,0,0,0.5)" }}
                             itemStyle={{ fontSize: 13, fontWeight: 600 }}
                             labelStyle={{ color: "#94a3b8", marginBottom: 4 }}

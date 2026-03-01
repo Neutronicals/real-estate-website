@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const stats = [
     { icon: Home, value: 2400, suffix: "+", label: "Active Listings", prefix: "" },
     { icon: Users, value: 850, suffix: "+", label: "Expert Agents", prefix: "" },
-    { icon: TrendingUp, value: 4.2, suffix: "B", label: "Total Volume Sold", prefix: "$" },
+    { icon: TrendingUp, value: 4.2, suffix: "B", label: "Total Volume Sold", prefix: "₵" },
     { icon: Award, value: 98, suffix: "%", label: "Client Satisfaction", prefix: "" },
 ];
 

@@ -150,7 +150,7 @@ function SearchPageInner() {
                                 <div className="flex justify-between mb-3">
                                     <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Max Price</label>
                                     <span className="text-[13px] font-bold text-teal-400">
-                                        {maxPrice >= 10000000 ? "Any Price" : `$${(maxPrice / 1000000).toFixed(1)}M`}
+                                        {maxPrice >= 10000000 ? "Any Price" : `₵${(maxPrice / 1000000).toFixed(1)}M`}
                                     </span>
                                 </div>
                                 <input
