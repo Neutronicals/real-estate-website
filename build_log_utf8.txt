@@ -1,0 +1,46 @@
+﻿
+> real-estate-website@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.5
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/16) ...
+   Generating static pages (4/16) 
+   Generating static pages (8/16) 
+   Generating static pages (12/16) 
+ Γ£ô Generating static pages (16/16)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+Γöî Γùï /                                    12.6 kB         156 kB
+Γö£ Γùï /_not-found                          138 B            88 kB
+Γö£ Γùï /about                               3.53 kB         142 kB
+Γö£ Γùï /admin                               5.94 kB         245 kB
+Γö£ Γùï /admin/agents                        5.5 kB         98.4 kB
+Γö£ Γùï /admin/leads                         2.78 kB         105 kB
+Γö£ Γùï /admin/properties                    3.1 kB          108 kB
+Γö£ ╞Æ /admin/properties/[id]/edit          139 B          97.9 kB
+Γö£ Γùï /admin/properties/new                138 B          97.9 kB
+Γö£ Γùï /admin/settings                      2.8 kB         90.6 kB
+Γö£ Γùï /agents                              184 B          99.9 kB
+Γö£ ╞Æ /agents/[id]                         52.6 kB         168 kB
+Γö£ ╞Æ /api/agents                          0 B                0 B
+Γö£ ╞Æ /api/properties                      0 B                0 B
+Γö£ Γùï /contact                             3.39 kB        91.2 kB
+Γö£ ╞Æ /property/[id]                       17.7 kB         258 kB
+Γöö Γùï /search                              6.96 kB         107 kB
++ First Load JS shared by all            87.8 kB
+  Γö£ chunks/23-4d2814ca0333b52a.js        31.7 kB
+  Γö£ chunks/fd9d1056-568b12031b9c4e8c.js  53.6 kB
+  Γöö other shared chunks (total)          2.5 kB
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

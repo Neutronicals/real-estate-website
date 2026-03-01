@@ -1,8 +1,14 @@
 import { notFound } from "next/navigation";
-import { getPropertyById } from "@/data/properties";
+import { getPropertyById, getProperties } from "@/data/properties";
 import { getAgentById } from "@/data/agents";
 import PropertyDetailClient from "@/components/PropertyDetailClient";
 import type { Metadata } from "next";
+
+export function generateStaticParams() {
+    return getProperties().map((property) => ({
+        id: property.id,
+    }));
+}
 
 interface Params {
     id: string;

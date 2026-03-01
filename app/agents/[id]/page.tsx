@@ -1,8 +1,14 @@
 import { notFound } from "next/navigation";
-import { getAgentById } from "@/data/agents";
+import { getAgentById, getAgents } from "@/data/agents";
 import { getPropertyById } from "@/data/properties";
 import AgentProfileClient from "@/components/AgentProfileClient";
 import type { Metadata } from "next";
+
+export function generateStaticParams() {
+    return getAgents().map((agent) => ({
+        id: agent.id,
+    }));
+}
 
 interface Params {
     id: string;
