@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Search, ChevronDown, Sparkles } from "lucide-react";
+import { Search, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const searchSuggestions = [
@@ -149,21 +149,7 @@ export default function HeroSection() {
                 </motion.div>
             </div>
 
-            {/* Scroll indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 2, duration: 1 }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400"
-            >
-                <span className="text-xs font-semibold tracking-[0.2em] uppercase">Scroll</span>
-                <motion.div
-                    animate={{ y: [0, 8, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                >
-                    <ChevronDown className="w-5 h-5 text-teal-400" />
-                </motion.div>
-            </motion.div>
+
         </section>
     );
 }
